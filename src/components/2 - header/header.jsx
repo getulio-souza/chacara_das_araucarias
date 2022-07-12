@@ -5,19 +5,9 @@ import {
   HeaderImg,
   HeaderContentContainer,
   HeaderBtn,
-  ModalContainer,
-  ModalTitle,
-  ModalWhereLabelContainer,
-  ModalCheckinTitle,
-  ModalCheckinInput,
-  ModalCheckoutTitle,
-  ModalCheckOutInput,
-  ModalGuests,
-  ModalTitleGuests,
-  ModalInputHGuests,
-  ModalSearchBtn,
 } from "./header.style";
-import fotoDaEntrada from "../../img/sitio_ilustrativa.jpg";
+import ModalformHeader from "./Modal/ModalformHeader"
+import fotoDaEntrada from "../../img/sitio_paisagem.jpg";
 
 function Header() {
   return (
@@ -27,21 +17,7 @@ function Header() {
         <HeaderTitle>Bem-vindo ao paraíso!</HeaderTitle>
         <HeaderBtn>Conheça mais</HeaderBtn>
       </HeaderContentContainer>
-      <ModalContainer>
-        <ModalTitle>Faça sua reserva</ModalTitle>
-        <ModalWhereLabelContainer>
-          <ModalCheckinTitle>Entrada</ModalCheckinTitle>
-          <ModalCheckinInput></ModalCheckinInput>
-          <ModalCheckoutTitle>Saída</ModalCheckoutTitle>
-          <ModalCheckOutInput></ModalCheckOutInput>
-        </ModalWhereLabelContainer>
-        <ModalGuests>
-          <ModalTitleGuests>Convidados</ModalTitleGuests>
-          <ModalInputHGuests></ModalInputHGuests>
-        </ModalGuests>
-        <ModalSearchBtn>Consultar</ModalSearchBtn>
-      </ModalContainer>
-
+      <ModalformHeader/>
     </HeaderContainer>
   );
 }
