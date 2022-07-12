@@ -6,6 +6,7 @@ export const NavbarContainer = styled.div`
   height:fit-content;
   display:flex;
   position:absolute;
+  z-index:5;
 `;
 
 export const NavbarLogo = styled.img`
@@ -23,47 +24,49 @@ export const NavbarLinks = styled.ul`
  display: flex;
  align-items:center;
  gap:2rem;
- position: absolute;
+ position: fixed;
  top:0;
  right:0;
  margin:1rem;
  padding:1rem;
- @media(max-width:900px){
-  display: none;
- }
-
-`;
+ 
+ `;
 export const NavbarLink = styled.li`
-background-color:green;
 color:#fff;
+text-shadow:1px 2px 3px #000;
+border:1px solid #000;
 font-size:20px;
 font-weight:600;
-padding:5px 15px;
+padding:10px 20px;
 font-size:20px;
 font-weight:600;
 border-radius:10px;
 transition:.5s;
+@media(max-width:900px){
+  display: none;
+ }
 cursor: pointer;
 &:hover{
-
-background-color:#fff;
-   color:green;
+text-shadow:none;
+background-color:#3a963a;
+color: #fff;
 }
 `;
 
 export const NavbarLinkSpecial = styled.li`
-   background-color:green;
+   background-color:#3a963a;
    color:#fff;
+   text-shadow:1px 2px 3px #000;
    padding:10px 20px;
-   border:1px solid green;
    font-size:20px;
    font-weight:600;
    border-radius:20px;
    transition:.5s;
    cursor: pointer;
    &:hover{
-   background-color:blue;
-   color:#fff;
+   background-color:#fff;
+   color:#3a963a;
+   text-shadow:none;
    }
 `;
 
@@ -71,7 +74,7 @@ export const NavbarMobile = styled.div`
  position:absolute;
  top:0;
  right:0;
- background-color:green;
+ background-color:3a963a;
  width:50%;
  height:60vh;
  z-index:6;
@@ -109,7 +112,7 @@ export const NavbarMobileLink = styled.li`
   }
   &:hover{
     background-color:#fff;
-    color: green;
+    color: #3a963a;
   }
 `;
 

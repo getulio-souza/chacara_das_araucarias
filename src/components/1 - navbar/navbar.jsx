@@ -19,9 +19,10 @@ function navbar() {
   
   return (
     <NavbarContainer>
-      <NavbarLogo src={Logo}></NavbarLogo>
+      {/* <NavbarLogo src={Logo}></NavbarLogo> */}
       <NavbarLinks>
         <NavbarLink>Quem somos</NavbarLink>
+        <NavbarLink>Nossos serviços</NavbarLink>
         <NavbarLink>Como Chegar</NavbarLink>
         <NavbarLinkSpecial>Faça sua reserva</NavbarLinkSpecial>
       </NavbarLinks>

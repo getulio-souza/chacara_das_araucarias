@@ -7,17 +7,17 @@ import {
   HeaderBtn,
 } from "./header.style";
 import ModalformHeader from "./Modal/ModalformHeader"
-import fotoDaEntrada from "../../img/sitio_paisagem.jpg";
+import fotoDaEntrada from "../../img/Fotos/sitio_paisagem.jpg";
 
 function Header() {
   return (
     <HeaderContainer>
-      <HeaderImg src={fotoDaEntrada}></HeaderImg>
       <HeaderContentContainer>
-        <HeaderTitle>Bem-vindo ao paraíso!</HeaderTitle>
+        <HeaderTitle>Bem-vindo à <span style={{color: "#00FF00"}}>Chácara das Araucárias!</span></HeaderTitle>
         <HeaderBtn>Conheça mais</HeaderBtn>
       </HeaderContentContainer>
       <ModalformHeader/>
+      <HeaderImg src={fotoDaEntrada}></HeaderImg>
     </HeaderContainer>
   );
 }

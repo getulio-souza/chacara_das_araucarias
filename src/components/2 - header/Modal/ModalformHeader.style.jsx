@@ -5,10 +5,13 @@ import styled from "styled-components";
 export const ModalContainer = styled.div`
   background-color: #fff;
   padding: 30px;
-  position: absolute;
-  right: 20%;
+  z-index:5;
   border-radius: 20px;
   box-shadow: 2px 5px 7px #000;
+  @media(max-width:900px){
+    display: none;
+    right:0;
+  }
 `;
 
 export const ModalTitle = styled.h3`
