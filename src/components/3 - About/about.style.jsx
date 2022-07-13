@@ -12,9 +12,13 @@ export const AboutImg = styled.img`
 object-fit:cover;
 width:500px;
 height:300px;
-margin:2rem;
+margin-bottom:2rem;
 border-radius:20px;
 box-shadow:2px 5px 7px #000;
+@media(max-width:700px){
+  width:300px;
+  height:200px;
+}
 `;
 
 export const AboutContent = styled.div`

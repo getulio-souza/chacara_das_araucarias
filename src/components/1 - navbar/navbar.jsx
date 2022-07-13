@@ -23,6 +23,7 @@ function navbar() {
       <NavbarLinks>
         <NavbarLink>Quem somos</NavbarLink>
         <NavbarLink>Nossos serviços</NavbarLink>
+        <NavbarLink>Galeria</NavbarLink>
         <NavbarLink>Como Chegar</NavbarLink>
         <NavbarLinkSpecial>Faça sua reserva</NavbarLinkSpecial>
       </NavbarLinks>

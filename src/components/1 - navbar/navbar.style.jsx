@@ -24,7 +24,7 @@ export const NavbarLinks = styled.ul`
  display: flex;
  align-items:center;
  gap:2rem;
- position: fixed;
+ position: absolute;
  top:0;
  right:0;
  margin:1rem;
@@ -63,6 +63,9 @@ export const NavbarLinkSpecial = styled.li`
    border-radius:20px;
    transition:.5s;
    cursor: pointer;
+   @media(min-width:900px){
+    display: none;
+   }
    &:hover{
    background-color:#fff;
    color:#3a963a;
