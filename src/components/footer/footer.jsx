@@ -1,10 +1,12 @@
 import React from 'react'
 import {FooterContainer} from "./footer.style"
-
+import { SectionTitle } from "../General Styles/globalStyles.style";
 function Footer() {
   return (
-      <FooterContainer>
+    <FooterContainer>
+      <SectionTitle>
           footer
+    </SectionTitle>
     </FooterContainer>
   )
 }

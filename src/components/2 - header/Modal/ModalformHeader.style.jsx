@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 export const ModalContainer = styled.div`
 background-image: linear-gradient(315deg, #f6fba2 0%, #20ded3 74%);
+  display: none;
   padding: 30px;
   z-index:5;
   border-radius: 20px;
